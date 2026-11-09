@@ -1,0 +1,38 @@
+{
+  "tenantId": "",
+  "location": "swedencentral",
+  "managementGroups": {
+    "prefix": "company",
+    "rootDisplayName": "Company"
+  },
+  "sshPublicKeyPath": "~/.ssh/azure-hub-spoke-template-04.pub",
+  "testUserUpn": "",
+  "management": {
+    "subscriptionId": ""
+  },
+  "connectivity": {
+    "subscriptionId": "",
+    "bastionUsersGroup": {
+      "name": "sg-hub-shared-bastion-users",
+      "objectId": ""
+    }
+  },
+  "landingZones": {
+    "app1-dev": {
+      "subscriptionId": "",
+      "addressPrefix": "10.0.4.0/22",
+      "vmAdminLoginGroup": {
+        "name": "sg-app1-dev-vm-admin-login",
+        "objectId": ""
+      }
+    },
+    "app2-dev": {
+      "subscriptionId": "",
+      "addressPrefix": "10.0.8.0/22",
+      "vmAdminLoginGroup": {
+        "name": "sg-app2-dev-vm-admin-login",
+        "objectId": ""
+      }
+    }
+  }
+}
